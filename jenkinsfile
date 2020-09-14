@@ -19,11 +19,4 @@ pipeline {
         }
     }
 }
-node { 
-    stage('Clone') {
-        git url: 'https://github.com/NhatTanvn/DemoPipeLine/DemoPipeLine.com.git'
-    }
-    stage('Build') {
-        sh 'mvn clean install -f DemoPipeLine/pom.xml'
-    }
-}
+
